@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - GlowSphere</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="chat.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-content">
+        <a href="home.html" class="logo"
+          ><i class="fas fa-spa"></i> GlowSphere</a
+        >
+        <button class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links">
+          <a href="home.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="skincaretips.html">Skincare Tips</a>
+          <a href="skincareroutine.html">Routine</a>
+          <a href="about.html" class="active">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-icons">
+          <a href="#"><i class="fas fa-search"></i></a>
+          <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          <a href="#"><i class="fas fa-user"></i></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1>Unbiased advice, backed by science</h1>
+          <p>
+            What are the best beauty products for you? The answers are in your
+            skin. Try our Skinalyser® now and Glow Sphere will scientifically
+            match your skin to the most suitable products in an instant.
+          </p>
+          <a href="http://localhost:8501/" class="button button-primary">
+            <i class="fas fa-star"></i> Try Skin Analyzer
+          </a>
+        </div>
+        <div class="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+            alt="Woman using skincare products"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="our-story">
+      <div class="story-container">
+        <div class="story-text">
+          <h2>Our Story</h2>
+          <p>
+            Glow Sphere began as a university project by three best friends,
+            Meha, Rakshana, and Abinaya, in their second year. Passionate about
+            skincare, they wanted to create a platform that offers honest,
+            independent advice backed by science.
+          </p>
+          <p>
+            The Skinalyser® tool was born out of their combined efforts to help
+            people find the perfect skincare routine effortlessly.
+          </p>
+          <p class="signature">— Meha, Rakshana, Abinaya</p>
+          <a href="skincareroutine.html" class="button button-primary">
+            <i class="fas fa-flask"></i> Try Skinalyser®
+          </a>
+        </div>
+        <div class="founders">
+          <div class="founder">
+            <img src="raksh.jpeg" alt="Rakshana" class="founder-img" />
+            <h4>Rakshana</h4>
+            <p>CEO & Founder</p>
+          </div>
+          <div class="founder">
+            <img src="mehu.jpeg" alt="Meha" class="founder-img" />
+            <h4>Meha</h4>
+            <p>CTO & Co-Founder</p>
+          </div>
+          <div class="founder">
+            <img src="abii.jpeg" alt="Abinaya" class="founder-img" />
+            <h4>Abinaya</h4>
+            <p>CSO & Co-Founder</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+      <div class="container">
+        <h2>A Smarter Shopping Experience</h2>
+        <p>
+          Discover a smarter skincare shopping journey. Independent,
+          personalized product recommendations backed by science.
+        </p>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Complete the Quiz</h3>
+            <p>Answer questions about your skin type, concerns, and goals.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Get Recommendations</h3>
+            <p>Receive unbiased product matches tailored to your skin.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Shop with Confidence</h3>
+            <p>Purchase from trusted retailers with one-click convenience.</p>
+          </div>
+        </div>
+
+        <div class="brands">
+          <img src="ordinary.jpg" alt="The Ordinary" class="brand-img" />
+          <img src="cerave.jpg" alt="CeraVe" class="brand-img" />
+          <img src="clinique.jpg" alt="Clinique" class="brand-img" />
+          <img src="laroche.jpg" alt="La Roche-Posay" class="brand-img" />
+        </div>
+      </div>
+    </section>
+    <!-- Chatbot Icon -->
+    <div id="chatbot-toggle">💬</div>
+
+    <!-- Chatbot UI -->
+    <div id="chatbot-container">
+      <div id="chatbot-header">Gemini Chatbot</div>
+      <div id="chatbot-body">
+        <div id="chat-log"></div>
+        <div id="chat-input-area">
+          <input type="text" id="chat-input" placeholder="Ask something..." />
+          <button id="chat-send">➤</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Promises Section -->
+    <section class="promises">
+      <div class="container">
+        <h2>What We Promise</h2>
+        <div class="promise-cards">
+          <div class="promise-card">
+            <h3>No More Searching</h3>
+            <p>
+              No more spending hours finding the right skincare. Our algorithm
+              does the work for you.
+            </p>
+          </div>
+          <div class="promise-card">
+            <h3>No Paid Endorsements</h3>
+            <p>
+              Completely unbiased recommendations based on science, not
+              sponsorships.
+            </p>
+          </div>
+          <div class="promise-card">
+            <h3>100% Online</h3>
+            <p>Everything accessible from anywhere. No appointments needed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+      <div class="container">
+        <h2>Got a question about your skin?</h2>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Can Glow Sphere help me choose the right products?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes! Our Skinalyser® tool analyzes your skin and provides
+                unbiased, science-backed recommendations tailored to your skin
+                type and concerns.
+              </p>
+              <p>
+                We use advanced algorithms to match your skin profile with the
+                most effective products from our database of thousands of
+                skincare items.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How do I use the Glow Sphere website?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                1. Take the Skinalyser® skin quiz - answer questions about your
+                skin
+              </p>
+              <p>2. Get your personalized skincare results</p>
+              <p>3. View your recommended skincare routine</p>
+              <p>4. Buy products directly through our platform</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How do I order my products?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Once you receive your personalized results, you can compare
+                retailers to find the best price. We partner with authorized
+                sellers to ensure you receive genuine products.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Who can benefit from the skin quiz?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Everyone! The Skinalyser® quiz customizes routines for all skin
+                types and concerns. Whether you're dealing with dryness, acne,
+                sensitivity, or aging, we've got you covered.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founder's Note -->
+    <section class="founder-note">
+      <div class="container">
+        <p>
+          "At Glow Sphere, we believe in empowering you with the right tools to
+          make informed skincare decisions. Our mission is to simplify skincare
+          for everyone."
+        </p>
+        <p class="signature">— Meha, Rakshana, Abinaya</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section footer-about">
+          <a href="home.html" class="footer-logo"
+            ><i class="fas fa-spa"></i> GlowSphere</a
+          >
+          <p>
+            Dedicated to helping you achieve your best skin through expert tips,
+            quality products, and personalized skincare routines.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="products.html">Shop All</a></li>
+            <li><a href="skincareroutine.html">Skin Analysis</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Customer Service</h3>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Track Order</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section footer-contact">
+          <h3>Contact Us</h3>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> 123 Beauty Street, Mumbai,
+            India
+          </p>
+          <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+          <p><i class="fas fa-envelope"></i> hello@glowsphere.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 GlowSphere. All rights reserved. |
+          <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="about.js"></script>
+    <script>
+      const chatToggle = document.getElementById("chatbot-toggle");
+      const chatContainer = document.getElementById("chatbot-container");
+      const chatLog = document.getElementById("chat-log");
+      const chatInput = document.getElementById("chat-input");
+      const chatSend = document.getElementById("chat-send");
+
+      const GEMINI_API_KEY = "AIzaSyBWAdFrmYWnakuaRH3eWWkAJx9tPgVbjt4";
+
+      chatToggle.addEventListener("click", () => {
+        chatContainer.style.display =
+          chatContainer.style.display === "flex" ? "none" : "flex";
+      });
+
+      chatSend.addEventListener("click", async () => {
+        const userInput = chatInput.value.trim();
+        if (!userInput) return;
+
+        appendMessage("You", userInput);
+        chatInput.value = "";
+
+        try {
+          const response = await fetch(
+            "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=" +
+              GEMINI_API_KEY,
+            {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                contents: [{ parts: [{ text: userInput }] }],
+              }),
+            }
+          );
+
+          const data = await response.json();
+          const botReply =
+            data.candidates?.[0]?.content?.parts?.[0]?.text ||
+            "Hmm, I didn’t understand that.";
+          appendMessage("Bot", botReply);
+        } catch (e) {
+          appendMessage("Bot", "Error: Unable to contact Gemini API.");
+        }
+      });
+
+      function appendMessage(sender, text) {
+        const messageDiv = document.createElement("div");
+        messageDiv.innerHTML = `<strong>${sender}:</strong> ${text}`;
+        chatLog.appendChild(messageDiv);
+        chatLog.scrollTop = chatLog.scrollHeight;
+      }
+    </script>
+  </body>
+</html>

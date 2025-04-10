@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GlowSphere - Premium Skincare Products</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="products.css">
+      <link rel="stylesheet" href="chat.css" />
+  </head>
+  <body>
+    <!-- Navbar - Consistent with home page -->
+    <nav class="navbar">
+      <div class="nav-content">
+        <a href="index.html" class="logo"><i class="fas fa-spa"></i> GlowSphere</a>
+        <button class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links">
+          <a href="home.html">Home</a>
+          <a href="products.html" class="active">Products</a>
+          <a href="skincaretips.html">Skincare Tips</a>
+          <a href="skincareroutine.html">Routine</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-icons">
+          <a href="#"><i class="fas fa-search"></i></a>
+          <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          <a href="#"><i class="fas fa-user"></i></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Products Hero Section -->
+    <section class="products-hero">
+      <div class="products-hero-content" data-aos="fade-up">
+        <h1>Our <span>Premium</span> Skincare Collection</h1>
+        <p>Discover scientifically-formulated products that deliver visible results for your unique skin needs. Each product is carefully crafted with high-quality ingredients.</p>
+        <div class="hero-buttons">
+          <a href="skincareroutine.html" class="button button-primary">
+            <i class="fas fa-play-circle"></i> Find Your Routine
+          </a>
+          <a href="#products" class="button button-secondary">
+            <i class="fas fa-arrow-down"></i> Shop Now
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Filter Section -->
+    <div class="products-filter" id="products">
+      <div class="filter-container">
+        <div class="filter-group">
+          <span class="filter-label">Filter by:</span>
+          <select class="filter-select">
+            <option value="all">All Products</option>
+            <option value="cleansers">Cleansers</option>
+            <option value="serums">Serums</option>
+            <option value="moisturizers">Moisturizers</option>
+            <option value="sunscreen">Sunscreen</option>
+            <option value="masks">Masks</option>
+          </select>
+          <select class="filter-select">
+            <option value="all">All Skin Types</option>
+            <option value="dry">Dry Skin</option>
+            <option value="oily">Oily Skin</option>
+            <option value="combination">Combination</option>
+            <option value="sensitive">Sensitive</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <span class="filter-label">Sort by:</span>
+          <select class="filter-select">
+            <option value="popular">Most Popular</option>
+            <option value="newest">Newest</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="rating">Customer Rating</option>
+          </select>
+          <div class="view-toggle">
+            <button class="active" title="Grid View"><i class="fas fa-th"></i></button>
+            <button title="List View"><i class="fas fa-list"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Products Grid Section -->
+    <section class="products-section">
+      <div class="products-container">
+        <div class="products-grid">
+          <!-- Product Card 1 -->
+          <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="product-badge">Bestseller</div>
+            <div class="product-image">
+              <img src="serum.webp" alt="Rose Glow Serum">
+            </div>
+            <div class="product-info">
+              <span class="product-category">Serum</span>
+              <h3>Rose Glow Serum</h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>(248)</span>
+              </div>
+              <!-- class="add-to-cart"  -->
+              <p class="product-price">Rs.480</p>
+              <button onclick="addToCart('Rose Glow Serum', 480.00)" class="button button-primary product-button">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+          
+          <!-- Product Card 2 -->
+          <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="product-badge">New</div>
+            <div class="product-image">
+              <img src="cleanser1.jpg" alt="Gentle Cloud Cleanser">
+            </div>
+            <div class="product-info">
+              <span class="product-category">Cleanser</span>
+              <h3>Gentle Cloud Cleanser</h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(512)</span>
+              </div>
+              <p class="product-price">Rs.340</p>
+              <button onclick="addToCart('Gentle Cloud Cleanser', 340.00)" class="button button-primary product-button">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+          
+          <!-- Product Card 3 -->
+          <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="product-image">
+              <img src="vitaminc.webp" alt="Vitamin C Radiance Cream">
+            </div>
+            <div class="product-info">
+              <span class="product-category">Moisturizer</span>
+              <h3>Vitamin C Radiance Cream</h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span>(187)</span>
+              </div>
+              <p class="product-price">Rs.400</p>
+              <button onclick="addToCart('Vitamin C Radiance Cream', 400.00)" class="button button-primary product-button">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+          
+          <!-- Product Card 4 -->
+          <div class="product-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="product-badge">Limited</div>
+            <div class="product-image">
+              <img src="mask1.jpg" alt="Midnight Recovery Mask">
+            </div>
+            <div class="product-info">
+              <span class="product-category">Mask</span>
+              <h3>Midnight Recovery Mask</h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(326)</span>
+              </div>
+              <p class="product-price">Rs.300 <span class="old-price">Rs.400</span></p>
+              <button onclick="addToCart('Midnight Recovery Mask', 300.00)" class="button button-primary product-button">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+          
+          <!-- Product Card 5 -->
+          <div class="product-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="product-image">
+              <img src="eyecream.webp" alt="Peptide Eye Cream">
+            </div>
+            <div class="product-info">
+              <span class="product-category">Eye Care</span>
+              <h3>Peptide Eye Cream</h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>(412)</span>
+              </div>
+              <p class="product-price">Rs.250</p>
+              <button onclick="addToCart('Peptide Eye Cream', 250.00)" class="button button-primary product-button">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+          
+          <!-- Product Card 6 -->
+          <div class="product-card" data-aos="fade-up" data-aos-delay="600">
+            <div class="product-badge">Bestseller</div>
+            <div class="product-image">
+              <img src="aquass.jpg" alt="Broad Spectrum Sunscreen">
+            </div>
+            <div class="product-info">
+              <span class="product-category">Sunscreen</span>
+              <h3>Broad Spectrum Sunscreen</h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(789)</span>
+              </div>
+              <p class="product-price">Rs.350</p>
+              <button onclick="addToCart('Broad Spectrum Sunscreen', 350.00)" class="button button-primary product-button">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+
+           <!-- Product Card 7 -->
+          <div class="product-card" data-aos="fade-up" data-aos-delay="600">
+            <div class="product-image">
+              <img src="charcoal.jpeg" alt="Activated Charcoal Mask">
+            </div>
+            <div class="product-info">
+              <span class="product-category">Mask</span>
+              <h3>Activated Charcoal Mask</h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(789)</span>
+              </div>
+              <p class="product-price">Rs.500</p>
+              <button onclick="addToCart('Activated Charcoal Mask', 500.00)" class="button button-primary product-button">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Card 8 -->
+          <div class="product-card" data-aos="fade-up" data-aos-delay="600">
+            <div class="product-image">
+              <img src="hydration.jpeg" alt="Caudalie Hydration Serum">
+            </div>
+            <div class="product-info">
+              <span class="product-category">Serum</span>
+              <h3>Caudalie Hydration Serum</h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(789)</span>
+              </div>
+              <p class="product-price">Rs.500</p>
+              <button onclick="addToCart('Caudalie Hydration Serum', 500.00)" class="button button-primary product-button">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        
+        
+        <!-- Pagination -->
+        <div class="pagination" data-aos="fade-up">
+          <a href="#">&laquo;</a>
+          <span class="current">1</span>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">&raquo;</a>
+        </div>
+      </div>
+    </section>
+<!-- Chatbot Icon -->
+<div id="chatbot-toggle">
+  💬
+</div>
+
+<!-- Chatbot UI -->
+<div id="chatbot-container">
+  <div id="chatbot-header">Gemini Chatbot</div>
+  <div id="chatbot-body">
+    <div id="chat-log"></div>
+    <div id="chat-input-area">
+      <input type="text" id="chat-input" placeholder="Ask something..." />
+      <button id="chat-send">➤</button>
+    </div>
+  </div>
+</div>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter">
+      <div class="section-title">
+        <h2>Join Our Beauty Community</h2>
+        <p>Subscribe to receive expert skincare tips, exclusive offers, and product updates.</p>
+      </div>
+      <form class="newsletter-form" data-aos="fade-up" data-aos-delay="100">
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit" class="button button-primary">
+          <i class="fas fa-paper-plane"></i> Subscribe
+        </button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section footer-about">
+          <a href="index.html" class="footer-logo"><i class="fas fa-spa"></i> GlowSphere</a>
+          <p>Dedicated to helping you achieve your best skin through expert tips, quality products, and personalized skincare routines.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Shop All</a></li>
+            <li><a href="skincareroutine.html">Skin Analysis</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Customer Service</h3>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Track Order</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section footer-contact">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Beauty Street, Mumbai, India</p>
+          <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+          <p><i class="fas fa-envelope"></i> hello@glowsphere.com</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 GlowSphere. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="prod1.js"></script>
+    <script src="products.js"></script>
+    <script>
+      const chatToggle = document.getElementById("chatbot-toggle");
+      const chatContainer = document.getElementById("chatbot-container");
+      const chatLog = document.getElementById("chat-log");
+      const chatInput = document.getElementById("chat-input");
+      const chatSend = document.getElementById("chat-send");
+
+      const GEMINI_API_KEY = "AIzaSyBWAdFrmYWnakuaRH3eWWkAJx9tPgVbjt4";
+
+      chatToggle.addEventListener("click", () => {
+        chatContainer.style.display =
+          chatContainer.style.display === "flex" ? "none" : "flex";
+      });
+
+      chatSend.addEventListener("click", async () => {
+        const userInput = chatInput.value.trim();
+        if (!userInput) return;
+
+        appendMessage("You", userInput);
+        chatInput.value = "";
+
+        try {
+          const response = await fetch(
+            "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=" +
+              GEMINI_API_KEY,
+            {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                contents: [{ parts: [{ text: userInput }] }],
+              }),
+            }
+          );
+
+          const data = await response.json();
+          const botReply =
+            data.candidates?.[0]?.content?.parts?.[0]?.text ||
+            "Hmm, I didn’t understand that.";
+          appendMessage("Bot", botReply);
+        } catch (e) {
+          appendMessage("Bot", "Error: Unable to contact Gemini API.");
+        }
+      });
+
+      function appendMessage(sender, text) {
+        const messageDiv = document.createElement("div");
+        messageDiv.innerHTML = `<strong>${sender}:</strong> ${text}`;
+        chatLog.appendChild(messageDiv);
+        chatLog.scrollTop = chatLog.scrollHeight;
+      }
+    </script>
+  </body>
+</html>

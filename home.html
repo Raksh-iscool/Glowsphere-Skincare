@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GlowSphere - Your Personal Skincare Expert</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="chat.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-content">
+        <a href="#" class="logo"><i class="fas fa-spa"></i> GlowSphere</a>
+        <button class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links">
+          <a href="home.html" class="active">Home</a>
+          <a href="products.html">Products</a>
+          <a href="skincaretips.html">Skincare Tips</a>
+          <a href="skincareroutine.html">Routine</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-icons">
+          <a href="products.html"><i class="fas fa-search"></i></a>
+          <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          <a href="#"><i class="fas fa-user"></i></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section">
+      <div class="hero-content">
+        <div class="hero-text fade-in">
+          <h1>Discover Your Perfect <span>Skincare</span> Routine</h1>
+          <p>
+            GlowSphere uses advanced AI to analyze your skin and recommend
+            personalized products that actually work for your unique skin type
+            and concerns.
+          </p>
+          <div class="hero-buttons">
+            <a href="skincareroutine.html" class="button button-primary">
+              <i class="fas fa-play-circle"></i> Start Skin Analysis
+            </a>
+            <a href="products.html" class="button button-secondary">
+              <i class="fas fa-shopping-bag"></i> Shop Products
+            </a>
+          </div>
+        </div>
+        <div class="hero-image floating-element fade-in delay-1">
+          <img src="onee.jpg" alt="Woman with glowing skin" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Science Section -->
+    <section id="science" class="section" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Product recommendations based on science, not sales</h2>
+        <p>
+          Tired of biased beauty advice? Our AI-powered analysis provides
+          unbiased recommendations based purely on your skin's needs.
+        </p>
+      </div>
+      <div class="science-content">
+        <div class="science-image" data-aos="fade-right">
+          <img
+            src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            alt="Skincare science"
+          />
+        </div>
+        <div class="science-text" data-aos="fade-left">
+          <h2>How Our Skin Analysis Works</h2>
+          <p>
+            Our proprietary algorithm evaluates over 50 factors to create your
+            personalized skincare profile. We combine dermatological research
+            with machine learning to deliver accurate, effective
+            recommendations.
+          </p>
+
+          <div class="features-grid">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-user-circle"></i>
+              </div>
+              <div class="feature-text">
+                <h4>Personalized Profile</h4>
+                <p>
+                  Answer simple questions about your skin to create your unique
+                  profile.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-camera"></i>
+              </div>
+              <div class="feature-text">
+                <h4>Photo Analysis</h4>
+                <p>
+                  Upload photos for our AI to analyze your skin's specific
+                  needs.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-flask"></i>
+              </div>
+              <div class="feature-text">
+                <h4>Scientific Matching</h4>
+                <p>
+                  We match ingredients and formulations to your skin's
+                  requirements.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-heart"></i>
+              </div>
+              <div class="feature-text">
+                <h4>Ongoing Adjustments</h4>
+                <p>Your routine evolves as your skin changes over time.</p>
+              </div>
+            </div>
+          </div>
+
+          <a
+            href="skincareroutine.html"
+            class="button button-primary"
+            style="margin-top: 2rem"
+          >
+            <i class="fas fa-play-circle"></i> Start Your Analysis
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Our Best Selling Products</h2>
+        <p>
+          Formulated with clinically-proven ingredients to deliver real results
+          for all skin types.
+        </p>
+      </div>
+      <div class="product-grid">
+        <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="product-badge">Bestseller</div>
+          <div class="product-image">
+            <img src="hygel.jpg" alt="Hydrating Cleanser" />
+          </div>
+          <div class="product-info">
+            <span class="product-category">Cleanser</span>
+            <h3>Hydrating Gel Cleanser</h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span>(248)</span>
+            </div>
+            <p class="product-price">Rs. 400</p>
+            <button
+              onclick="addToCart('Hydrating Gel Cleanser', 400.00)"
+              class="button button-primary product-button"
+            >
+              <i class="fas fa-shopping-cart"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="product-badge">New</div>
+          <div class="product-image">
+            <img src="sun.jpg" alt="SPF 50 Sunscreen" />
+          </div>
+          <div class="product-info">
+            <span class="product-category">Sunscreen</span>
+            <h3>Mineral SPF 50 Sunscreen</h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span>(512)</span>
+            </div>
+            <p class="product-price">Rs. 450</p>
+            <button
+              onclick="addToCart('Mineral SPF 50 Sunscreen', 450.00)"
+              class="button button-primary product-button"
+            >
+              <i class="fas fa-shopping-cart"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="product-image">
+            <img src="hylo.jpg" alt="Hydrating Lotion" />
+          </div>
+          <div class="product-info">
+            <span class="product-category">Moisturizer</span>
+            <h3>Ceramide Hydrating Lotion</h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span>(187)</span>
+            </div>
+            <p class="product-price">Rs. 350</p>
+            <button
+              onclick="addToCart('Ceramide Hydrating Lotion', 350.00)"
+              class="button button-primary product-button"
+            >
+              <i class="fas fa-shopping-cart"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 3rem" data-aos="fade-up">
+        <a href="products.html" class="button button-secondary">
+          <i class="fas fa-arrow-right"></i> View All Products
+        </a>
+      </div>
+    </section>
+
+    <!-- Analysis Section -->
+    <section id="analysis" class="section" data-aos="fade-up">
+      <div class="section-title">
+        <h2>A smarter skincare experience</h2>
+        <p>
+          Our innovative skin analysis tool helps you find your perfect skincare
+          routine, completely online.
+        </p>
+      </div>
+      <div class="analysis-container">
+        <div class="analysis-steps">
+          <div class="analysis-step" data-aos="fade-up" data-aos-delay="100">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4>Complete Our Quiz</h4>
+              <p>Answer questions about your skin type, concerns, and goals.</p>
+            </div>
+          </div>
+
+          <div class="analysis-step" data-aos="fade-up" data-aos-delay="200">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4>Upload Photos</h4>
+              <p>Our AI analyzes your skin's unique characteristics.</p>
+            </div>
+          </div>
+
+          <div class="analysis-step" data-aos="fade-up" data-aos-delay="300">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4>Get Your Routine</h4>
+              <p>Receive personalized product recommendations.</p>
+            </div>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="400" style="text-align: center">
+          <a href="skincareroutine.html" class="button button-primary">
+            <i class="fas fa-play-circle"></i> How It Works
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Chatbot Icon -->
+    <div id="chatbot-toggle">💬</div>
+
+    <!-- Chatbot UI -->
+    <div id="chatbot-container">
+      <div id="chatbot-header">Gemini Chatbot</div>
+      <div id="chatbot-body">
+        <div id="chat-log"></div>
+        <div id="chat-input-area">
+          <input type="text" id="chat-input" placeholder="Ask something..." />
+          <button id="chat-send">➤</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Info Hub Section -->
+    <section id="info-hub" class="section" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Skincare Education Hub</h2>
+        <p>Learn everything you need to know about caring for your skin.</p>
+      </div>
+      <div class="info-grid">
+        <div class="info-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="info-image">
+            <img src="skintype1.jpg" alt="Skin Types" />
+          </div>
+          <div class="info-content">
+            <h3>Skin Types</h3>
+            <p>
+              Understanding your skin type is the first step to building an
+              effective routine. Learn about dry, oily, combination and
+              sensitive skin.
+            </p>
+            <a href="skincaretips.html" class="button button-secondary">
+              <i class="fas fa-book-open"></i> Learn More
+            </a>
+          </div>
+        </div>
+
+        <div class="info-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="info-image">
+            <img src="sc.jpg" alt="Skin Concerns" />
+          </div>
+          <div class="info-content">
+            <h3>Skin Concerns</h3>
+            <p>
+              From acne to aging, discover solutions for your specific skin
+              concerns with our expert-backed guides.
+            </p>
+            <a href="skincaretips.html" class="button button-secondary">
+              <i class="fas fa-book-open"></i> Learn More
+            </a>
+          </div>
+        </div>
+
+        <div class="info-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="info-image">
+            <img src="sk.jpg" alt="Skincare Routine" />
+          </div>
+          <div class="info-content">
+            <h3>Skincare Routine</h3>
+            <p>
+              Morning or night, learn the proper order to apply products for
+              maximum effectiveness.
+            </p>
+            <a href="skincareroutine.html" class="button button-secondary">
+              <i class="fas fa-book-open"></i> Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section" data-aos="fade-up">
+      <div class="section-title">
+        <h2>What Our Customers Say</h2>
+        <p>
+          Real results from real people who've transformed their skin with
+          GlowSphere.
+        </p>
+      </div>
+      <div class="testimonial-slider">
+        <div class="testimonial" data-aos="fade-up">
+          <div class="testimonial-avatar">
+            <img src="test1.avif" alt="Sarah J." />
+          </div>
+          <p class="testimonial-text">
+            "GlowSphere completely changed my skincare game. After years of
+            struggling with acne, their personalized routine cleared my skin in
+            just 8 weeks. I've never been more confident!"
+          </p>
+          <h4 class="testimonial-author">Sarah J.</h4>
+          <p class="testimonial-role">Verified Customer</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="section" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Join Our Beauty Community</h2>
+        <p>
+          Subscribe to receive expert skincare tips, exclusive offers, and
+          product updates.
+        </p>
+      </div>
+      <form class="newsletter-form" data-aos="fade-up" data-aos-delay="100">
+        <input type="email" placeholder="Enter your email address" required />
+        <button type="submit" class="button button-primary">
+          <i class="fas fa-paper-plane"></i> Subscribe
+        </button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section footer-about">
+          <a href="#" class="footer-logo"
+            ><i class="fas fa-spa"></i> GlowSphere</a
+          >
+          <p>
+            Dedicated to helping you achieve your best skin through expert tips,
+            quality products, and personalized skincare routines.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="products.html">Shop All</a></li>
+            <li><a href="skincareroutine.html">Skin Analysis</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Customer Service</h3>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Track Order</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section footer-contact">
+          <h3>Contact Us</h3>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> 123 Beauty Street, Mumbai,
+            India
+          </p>
+          <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+          <p><i class="fas fa-envelope"></i> hello@glowsphere.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 GlowSphere. All rights reserved. |
+          <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="home.js"></script>
+    <script src="products.js"></script>
+    <script>
+      const chatToggle = document.getElementById("chatbot-toggle");
+      const chatContainer = document.getElementById("chatbot-container");
+      const chatLog = document.getElementById("chat-log");
+      const chatInput = document.getElementById("chat-input");
+      const chatSend = document.getElementById("chat-send");
+
+      const GEMINI_API_KEY = "AIzaSyBWAdFrmYWnakuaRH3eWWkAJx9tPgVbjt4";
+
+      chatToggle.addEventListener("click", () => {
+        chatContainer.style.display =
+          chatContainer.style.display === "flex" ? "none" : "flex";
+      });
+
+      chatSend.addEventListener("click", async () => {
+        const userInput = chatInput.value.trim();
+        if (!userInput) return;
+
+        appendMessage("You", userInput);
+        chatInput.value = "";
+
+        try {
+          const response = await fetch(
+            "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=" +
+              GEMINI_API_KEY,
+            {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                contents: [{ parts: [{ text: userInput }] }],
+              }),
+            }
+          );
+
+          const data = await response.json();
+          const botReply =
+            data.candidates?.[0]?.content?.parts?.[0]?.text ||
+            "Hmm, I didn’t understand that.";
+          appendMessage("Bot", botReply);
+        } catch (e) {
+          appendMessage("Bot", "Error: Unable to contact Gemini API.");
+        }
+      });
+
+      function appendMessage(sender, text) {
+        const messageDiv = document.createElement("div");
+        messageDiv.innerHTML = `<strong>${sender}:</strong> ${text}`;
+        chatLog.appendChild(messageDiv);
+        chatLog.scrollTop = chatLog.scrollHeight;
+      }
+    </script>
+  </body>
+</html>
